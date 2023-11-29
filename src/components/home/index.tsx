@@ -17,7 +17,7 @@ const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-10">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -75,7 +75,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
         {/* IMAGE */}
         <motion.div
-          className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end"
+          className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 mt-10 md:justify-items-end"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
