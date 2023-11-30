@@ -82,7 +82,11 @@
 
   @include media("<=phone") {
     padding: 1.5rem;
-    @include body-2;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
   }
 
   & a {
@@ -103,7 +107,7 @@
 
   @include media("<=phone") {
     width: 1.2rem;
-    min-width: 3.2rem;
+    // min-width: 3.2rem;
     margin-left: 3.2rem;
   }
 }

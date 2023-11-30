@@ -15,7 +15,7 @@ const FAQ = ({ setSelectedPage }: Props) => {
     <section id="faq" className="mx-auto w-5/6 pt-24 pb-32">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.FAQ)}
-        className="flex flex-row justify-between gap-y-[126px] items-start"
+        className="flex flex-col md:flex-row justify-between gap-x-[126px] items-start"
       >
         {/* HEADER */}
         <motion.div
