@@ -17,7 +17,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-  const navbarBackground = isTopOfPage ? "" : "transition duration-200 ease-in-out backdrop-filter backdrop-blur-xl bg-opacity-60 shadow";
+  const navbarBackground = isTopOfPage ? "" : "transition duration-200 ease-in-out bg-white shadow";
+  // const navbarBackground = isTopOfPage ? "" : "transition duration-200 ease-in-out backdrop-filter backdrop-blur-xl bg-opacity-60 shadow";
 
 
   return (
