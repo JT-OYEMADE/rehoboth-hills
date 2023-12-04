@@ -44,7 +44,7 @@ const Footer = () => {
     <footer className="bg-secondary-500 py-16">
       <div className=" mx-auto w-5/6 gap-[321px] md:flex md:border-b border-white border-opacity-50 pb-12">
         <div className="mt-10 md:mt-0 flex flex-col">
-          <h1 className="md:text-4xl text-3xl text-white w-3/5 mb-6">Start Investing today!</h1>
+          <h1 className="md:text-4xl text-3xl text-white w-4/5 mb-6">Start Investing today!</h1>
           <form className="flex md:flex-row flex-col md:gap-x-0 gap-y-4 md:border-0 border-b border-white border-opacity-50 pb-6">
             <input type="text" placeholder="Enter your email" className=" placeholder:text-[14px] placeholder:font-haskoy bg-white pt-[11px] pr-[63px] pb-[13px] pl-[27px] rounded-[20px]" />
             <button className="bg-black text-secondary-400 pt-[11px] pb-[13px] px-6 rounded-[20px]">Submit</button> 
