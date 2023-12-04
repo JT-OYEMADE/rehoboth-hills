@@ -21,7 +21,7 @@ const Home = ({ setSelectedPage }: Props) => {
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-10 ">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
-        className=" mt-[50px] mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+        className=" mt-[58px] mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
         {/* MAIN HEADER */}

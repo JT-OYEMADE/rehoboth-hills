@@ -1,8 +1,10 @@
 import Project1 from "@/assets/projects/project2.png"
+import Project2 from "@/assets/projects/jk.png"
 export const projects = [
   {
     text: "Step into a world of limitless possibilities and boundless serenity with Anora city.",
     image: Project1,
+    image1: Project2,
     headT: "Anora City",
     sHeadT: "Key Features",
     list_one: "Flexibility in payment - Own a piece of paradise with a mere #300k initial deposit and craft a payment plan spanning 3-12 months.",
@@ -14,6 +16,7 @@ export const projects = [
   {
     text: "Step into a world of limitless possibilities and boundless serenity with Anora city.",
     image: Project1,
+    image1: Project2,
     headT: "Nora City",
     sHeadT: "Key Features",
     list_one: "Flexibility in payment - Own a piece of paradise with a mere #300k initial deposit and craft a payment plan spanning 3-12 months.",
@@ -25,6 +28,7 @@ export const projects = [
   {
     text: "Step into a world of limitless possibilities and boundless serenity with Anora city.",
     image: Project1,
+    image1: Project2,
     headT: "Anora City",
     sHeadT: "Key Features",
     list_one: "Flexibility in payment - Own a piece of paradise with a mere #300k initial deposit and craft a payment plan spanning 3-12 months.",
