@@ -4,12 +4,15 @@ import HText from "@/shared/HText";
 import Accordion from "@/components/accordion/accordion";
 import { faqcoms } from "@/data/faqs"
 import FAQCOM from "./faqcom";
+import AOS from "aos";
+import { useEffect, useState } from "react";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
 const FAQ = ({ setSelectedPage }: Props) => {
+
 
   return (
     <section id="faq" className="mx-auto w-5/6 pt-24 pb-32">
@@ -23,10 +26,10 @@ const FAQ = ({ setSelectedPage }: Props) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
           }}
         >
           <h1 className=" text-4xl w-3/5 text-secondary-500">Frequently Asked  Questions</h1>
@@ -41,14 +44,14 @@ const FAQ = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: 50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             {faqcoms.map((faq) => (
-              <FAQCOM key={faq.question} question={faq.question} answer={faq.answer} />
+              <FAQCOM  key={faq.question} question={faq.question} answer={faq.answer} />
             ))}
 
           </motion.div>

@@ -8,6 +8,8 @@ import Dukiya from "@/assets/partners/dukiya.png"
 import Landwey from "@/assets/partners/landwey.png"
 import Landmark from "@/assets/partners/landmark.png"
 import Suji from "@/assets/partners/suji.png"
+import { YoutubePlayer } from "@/components/youtube-player";
+
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -17,14 +19,14 @@ const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-10">
+    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-10 ">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
-        className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+        className=" mt-[50px] mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
         {/* MAIN HEADER */}
-        <div className="z-10 mt-32 md:basis-3/5">
+        <div className="z-10 mt-32  md:basis-3/5">
           {/* HEADINGS */}
           <motion.div
             className="md:-mt-20"
@@ -33,12 +35,12 @@ const Home = ({ setSelectedPage }: Props) => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <div className="relative">
-              <div className="text-[58px] leading-none tracking-[-2.32px] before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
+              <div className="md:text-[58px] text-[48px] leading-none tracking-[-2.32px] before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
                 Redefining <span className="text-secondary-500 font-haskoy italic font-medium">wealth</span> <br /> creation in real estate
               </div>
             </div>
@@ -56,15 +58,15 @@ const Home = ({ setSelectedPage }: Props) => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ delay: 0.2, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
               Contact Us
             </ActionButton>
             <AnchorLink
-              className="text-base font-normal text-secondary-500 hover:text-secondary-400"
+              className="text-base font-normal text-secondary-500 hover:text-black transition duration-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.AboutUs}`}
             >
@@ -78,22 +80,23 @@ const Home = ({ setSelectedPage }: Props) => {
           className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 mt-10 md:justify-items-end"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          viewport={{ once: true, amount: 0.9 }}
+          transition={{ delay: 0.5, duration: 0.9 }}
           variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
           }}
         >
-          <img alt="home-pageGraphic" src={HomePage} />
+          {/* <img alt="home-pageGraphic" src={HomePage} /> */}
+          <YoutubePlayer videoId='0o_6yxG9wk0' className="h-[325px] md:h-[650px] w-[550px]"/>
         </motion.div>
       </motion.div>
 
       {/* PARTNERS */}
       {isAboveMediumScreens && (
-        <div className="h-[150px] bg-primary-100 py-10">
+        <div className="h-[150px] bg-primary-100 py-10 mt-[100px]">
           <div className="mx-auto w-5/6">
-            <p className="text-base font-light">TRUSTED AND PARTNERED BY</p>
+            <p className="text-base font-light pb-[30px]">TRUSTED AND PARTNERED BY</p>
             <div className="flex items-center justify-center gap-[115px]">
               <img alt="suji-partnerr" src={Suji} />
               <img alt="landwey-partner" src={Landwey} />

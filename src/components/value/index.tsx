@@ -63,10 +63,10 @@ const OurValues = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
             variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <div className="md:w-2/5">
@@ -78,22 +78,30 @@ const OurValues = ({ setSelectedPage }: Props) => {
           </motion.div>
           <motion.div
             className="mt-[100px] mx-auto w-5/6"
-            initial={isLargeScreen ? 'hidden' : undefined}
-            whileInView={isLargeScreen ? 'visible' : undefined}
+            initial="hidden"
+            whileInView='visible'
             viewport={{ once: true, amount: 0.8 }}
-            transition={{ duration: 0.8 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
             variants={{
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
             }}
           >
             <ul className="grid md:grid-rows-2 md:grid-cols-3 gap-x-[25px] gap-y-8">
+
               {values.map((item: ValueType, index) => (
-                <div className="text-white" key={index}>
+                <motion.div  initial="hidden"
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.8 }}
+                transition={{ delay: 0.8, duration: 0.8 }}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0 },
+                }} className="text-white" key={index}>
                   <img src={item.image} alt="" className="mb-8" />
                   <h1 className="text-secondary-400 text-3xl mb-4">{item.name}</h1>
                   <p className="text-base font-light">{item.description} </p>
-                </div>
+                </motion.div>
               ))}
             </ul>
           </motion.div >

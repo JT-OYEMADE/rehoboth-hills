@@ -16,10 +16,10 @@ const Testimonials = ({ setSelectedPage }: Props) => {
     AOS.init();
   }, []);
   return (
-    <section id="testimonials" className="w-full bg-primary-100 py-40">
-      <div className="mx-auto w-5/6 flex flex-row justify-between items-center">
-        <h1 className=" text-[30px] w-1/3">Here is what our clients say about us.</h1>
-        <div className="flex flex-row gap-x-3">
+    <section id="testimonials" className="w-full bg-primary-100 md:py-40">
+      <div className="mx-auto w-5/6 flex flex-row justify-between items-center md:mb-28">
+        <h1 className=" text-[30px] md:w-1/3 ">Here is what our clients say about us.</h1>
+        <div className="md:flex md:flex-row md:gap-x-3 hidden ">
           <button className="bg-secondary-500 rounded-full p-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 25 24" fill="none">
               <path d="M10.07 5.93018L4 12.0002L10.07 18.0702" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />

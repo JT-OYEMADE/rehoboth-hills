@@ -17,13 +17,13 @@ type Props = {
 
 const AboutUs = ({ setSelectedPage }: Props) => {
   return (
-    <section id="aboutus" className="bg-[#F1F1F1]">
-      <div className="mx-auto min-h-full w-5/6 py-20">
+    <section id="aboutus" className="bg-[#F4FCF6]">
+      <div className="mx-auto min-h-full w-5/6 py-20 md:pb-32">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.AboutUs)}
         >
           <div className="flex flex-col md:flex-row justify-between items-start gap-20">
-            <div className="mt-16">
+            <div className="md:mt-16">
               {/* HEADER */}
               <motion.div
                 className="md:my-5 md:w-3/5"
@@ -32,8 +32,8 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                  hidden: { opacity: 0, x: -50 },
-                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0 },
                 }}
               >
                 <PText>ABOUT US</PText>
@@ -45,25 +45,25 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                  hidden: { opacity: 0, x: -50 },
-                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0 },
                 }}
               >
                 <div>
-                  <HText >Rehoboth Hills{" "} <span className="text-black">International Limited</span></HText>
+                  <h1 className="basis-3/5 font-haskoy md:text-5xl text-4xl font-medium text-secondary-500 md:leading-[60px] -tracking-[1.92px] ">Rehoboth Hills{" "} <span className="text-black text-4xl md:text-5xl ">International Limited</span></h1>
                 </div>
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-row md:justify-between mt-3  gap-6">
                   <span>
-                    <HText>300+</HText>
-                    <PText>Customers</PText>
+                    <h1 className=" font-haskoy md:text-5xl font-medium text-secondary-500  -tracking-[1.92px] text-4xl " >300+</h1>
+                    <p className=" font-haskoy md:text-[16px] font-light text-[14px]">Customers</p>
                   </span>
                   <span className="">
-                    <HText>1000+</HText>
-                    <PText>Partners</PText>
+                    <h1 className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " >1000+</h1 >
+                    <p className=" font-haskoy md:text-[16px] font-light text-[14px]">Partners</p>
                   </span>
                   <span>
-                    <HText>50+</HText>
-                    <PText>Realtors</PText>
+                    <h1 className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " >50+</h1 >
+                    <p className=" font-haskoy md:text-[16px] font-light text-[14px]">Realtors</p>
                   </span>
                 </div>
               </motion.div>
@@ -74,10 +74,10 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
-                  transition={{ delay: 0.2, duration: 0.5 }}
+                  transition={{ delay: 0.5, duration: 0.7 }}
                   variants={{
-                    hidden: { opacity: 0, x: 50 },
-                    visible: { opacity: 1, x: 0 },
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
                   }}
                 >
                   <p className="my-5 font-haskoy font-light text-base ">

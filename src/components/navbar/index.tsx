@@ -23,7 +23,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
   return (
     <nav>
-      <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
+      <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6 shadow-white`}>
         <div className={`${flexBetween} mx-auto  w-5/6 `}>
           <div>
             <img src={Logo} alt="Rehoboth Logo" />
@@ -70,7 +70,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           )}
           {isAboveMediumScreens ? (<div>
             <ActionButton setSelectedPage={setSelectedPage}> <span>Contact us</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+              <svg className='hover:' xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                 <path d="M14.93 18.07L21 12L14.93 5.93" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M3.99996 12L20.83 12" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
               </svg></ActionButton>

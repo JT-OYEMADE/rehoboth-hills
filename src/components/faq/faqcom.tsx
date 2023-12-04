@@ -14,7 +14,7 @@ export default function FAQCOM(props: FAQCOM) {
   const [show, setShow] = useState(false);
 
   return (
-    <div className={styles.faq}>
+    <div  className={styles.faq}>
       <div
         onClick={() => setShow(!show)}
         className={show ? styles.faqQuestionA : styles.faqQuestion}
