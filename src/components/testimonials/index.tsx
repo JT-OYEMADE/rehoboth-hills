@@ -18,7 +18,7 @@ const Testimonials = ({ setSelectedPage }: Props) => {
   return (
     <section id="testimonials" className="w-full bg-primary-100 md:py-40">
       <div className="mx-auto w-5/6 flex flex-row justify-between items-center md:mb-28">
-        <h1 className=" text-[30px] md:w-1/3 ">Here is what our clients say about us.</h1>
+        <h1 className=" text-[30px] md:w-[30%] ">Here is what our clients say about us.</h1>
         <div className="md:flex md:flex-row md:gap-x-3 hidden ">
           <button className="bg-secondary-500 rounded-full p-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 25 24" fill="none">

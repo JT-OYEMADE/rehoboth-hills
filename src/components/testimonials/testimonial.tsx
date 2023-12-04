@@ -13,7 +13,7 @@ export default function TESTIMONIAL(props: TESTIMONIAL) {
   return (
     <div className="hover:text-white hover:bg-secondary-500  bg-[#F1F1F1] w-[264px] overflow-x-hidden hover:cursor-pointer text-[14px] px-[18px] pt-[30px] pb-[20px] h-fit flex flex-col gap-y-16 rounded-[10px] ">
       <div>
-        <p className=" font-light">{props.text}</p>
+        <p className=" font-extralight">{props.text}</p>
       </div>
       <div className="flex flex-row items-center gap-2">
         <div>

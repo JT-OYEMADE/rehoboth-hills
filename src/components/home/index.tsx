@@ -26,7 +26,7 @@ const Home = ({ setSelectedPage }: Props) => {
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
         {/* MAIN HEADER */}
-        <div className="z-10 mt-32  md:basis-3/5">
+        <div className="z-10 md:mt-32 mt-20  md:basis-3/5">
           {/* HEADINGS */}
           <motion.div
             className="md:-mt-20"
@@ -45,7 +45,7 @@ const Home = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
-            <p className="mt-6 w-11/12 text-base font-light">
+            <p className="mt-6 w-11/12 text-[#252525CC] text-lg font-light">
               We are Rehoboth Hills Limited, a name synonymous with innovation, excellence, and taste. We are revolutionising wealth creation within the Nigerian real estate industry and beyond.
             </p>
           </motion.div>

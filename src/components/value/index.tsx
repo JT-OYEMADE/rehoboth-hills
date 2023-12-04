@@ -51,9 +51,8 @@ type Props = {
 };
 
 const OurValues = ({ setSelectedPage }: Props) => {
-  const isLargeScreen = useMediaQuery('(min-width: 768px)')
   return (
-    <section id="ourvalues" className="w-full bg-primary-100 py-40 bg-secondary-500 text-white">
+    <section id="ourvalues" className="w-full bg-primary-100 py-20 md:py-40 bg-secondary-500 text-white">
       <div className="">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.OurValues)}
@@ -71,7 +70,7 @@ const OurValues = ({ setSelectedPage }: Props) => {
           >
             <div className="md:w-2/5">
               <div className=" font-haskoy md:text-5xl text-3xl font-medium text-white leading-normal -tracking-[0.8px] ">What <span className="text-secondary-400">Our Values</span> are at Rehoboth Hills Limited</div>
-              <p className="pt-2 pr-4 text-base font-light">
+              <p className="pt-2 pr-4 text-base font-light text-[#FFFFFFCC]">
                 With this core philosophy, we've embarked on a journey to create spaces that seamlessly blend modernity, sustainability, and luxury.
               </p>
             </div>
