@@ -95,7 +95,7 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className="h-[150px] bg-primary-100 py-10 mt-[100px]">
           <div className="mx-auto w-5/6">
             <p className="text-base font-light pb-[30px]">TRUSTED AND PARTNERED BY</p>
-            <div className="flex items-center justify-center gap-[115px]">
+            <div className="flex items-center justify-between gap-[75px]">
               <img alt="suji-partnerr" src={Suji} />
               <img alt="landwey-partner" src={Landwey} />
               <img alt="landmark-partner" src={Landmark} />
