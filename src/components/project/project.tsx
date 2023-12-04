@@ -1,5 +1,4 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
-import Image1 from "@/assets/projects/jk.png"
 import "@/components/testimonials/index.scss"
 
 interface ProjectProps {
@@ -20,7 +19,6 @@ interface ProjectProps {
 
 const PROJECT: React.FC<ProjectProps> = ({
   image,
-  image1,
   text,
   list_one,
   list_two,

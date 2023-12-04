@@ -7,7 +7,7 @@ import Dukiya from "@/assets/partners/dukiya.png"
 import Landwey from "@/assets/partners/landwey.png"
 import Landmark from "@/assets/partners/landmark.png"
 import Suji from "@/assets/partners/suji.png"
-import { YoutubePlayer } from "@/components/youtube-player";
+import { YoutubePlayer } from "./youtube-player";
 
 
 type Props = {
