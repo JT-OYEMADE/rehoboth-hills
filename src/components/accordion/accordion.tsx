@@ -11,7 +11,7 @@ export interface Accordion {
   index?: number;
 }
 
-const Accordion = ({ question, answer, children, title }: AccordionProps) => {
+const Accordion = ({ children, title }: AccordionProps) => {
   const [show, setShow] = useState(false);
 
   return (

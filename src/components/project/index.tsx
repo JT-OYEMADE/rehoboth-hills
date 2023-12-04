@@ -1,15 +1,7 @@
-import ActionButton from "@/shared/ActionButton";
 import HText from "@/shared/HText";
-import { BenefitType, SelectedPage } from "@/shared/types";
-import {
-  HomeModernIcon,
-  UserGroupIcon,
-  AcademicCapIcon,
-} from "@heroicons/react/24/solid";
+import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
-import Project from "@/assets/projects/project1.png"
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import gsap from "gsap";
 import "@/components/testimonials/index.scss"
 import { projects } from "@/data/projects";

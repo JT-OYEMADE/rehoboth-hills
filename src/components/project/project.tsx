@@ -1,4 +1,4 @@
-import Project from "@/assets/projects/ph.png"
+
 interface ProjectProps {
   key: number; // or number, depending on your data
   image: string;
@@ -17,7 +17,6 @@ interface ProjectProps {
 const PROJECT: React.FC<ProjectProps> = ({
   image,
   text,
-  className,
   list_one,
   list_two,
   list_three,

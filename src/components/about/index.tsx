@@ -1,6 +1,5 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import HText from "@/shared/HText";
 import PText from "@/shared/PText";
 
 // const childVariant = {

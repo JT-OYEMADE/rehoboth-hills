@@ -1,11 +1,7 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import HText from "@/shared/HText";
-import Accordion from "@/components/accordion/accordion";
 import { faqcoms } from "@/data/faqs"
 import FAQCOM from "./faqcom";
-import AOS from "aos";
-import { useEffect, useState } from "react";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;

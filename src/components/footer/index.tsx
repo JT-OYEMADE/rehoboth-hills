@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import Discord from "@/assets/socials/discord.svg"
 import Facebook from "@/assets/socials/facebook.svg"
 import Instagram from "@/assets/socials/instagram.svg"

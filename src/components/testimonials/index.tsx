@@ -11,7 +11,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Testimonials = ({ setSelectedPage }: Props) => {
+const Testimonials = ({}: Props) => {
   useEffect(() => {
     AOS.init();
   }, []);

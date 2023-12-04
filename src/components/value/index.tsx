@@ -6,7 +6,6 @@ import image3 from "@/assets/values/accountability.svg";
 import image4 from "@/assets/values/creditabilty.svg";
 import image5 from "@/assets//values/innovation.svg";
 import image6 from "@/assets/values/security.svg";
-import useMediaQuery from "@/hooks/useMediaQuery";
 
 const values: Array<ValueType> = [
   {

@@ -3,7 +3,6 @@ import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
-import HomePage from "@/assets/HomePage.png";
 import Dukiya from "@/assets/partners/dukiya.png"
 import Landwey from "@/assets/partners/landwey.png"
 import Landmark from "@/assets/partners/landmark.png"
