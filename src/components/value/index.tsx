@@ -23,24 +23,24 @@ const values: Array<ValueType> = [
   {
     name: "Accountability",
     description:
-      "Integrity is the cornerstone of our commitment at Rehoboth Hills Limited. In the realm of real estate, where trust is paramount, we stand unwavering in our dedication to honesty, transparency, and ethical conduct.",
+      "Accountability is the cornerstone of our real estate commitment. From transparent transactions to delivering on promises, we pride ourselves on being accountable every step of the way.",
     image: image3,
   },
   {
     name: "Credibility",
     description:
-      "Integrity is the cornerstone of our commitment at Rehoboth Hills Limited. In the realm of real estate, where trust is paramount, we stand unwavering in our dedication to honesty, transparency, and ethical conduct.",
+      "Credibility in real estate is earned through a legacy of transparent dealings, unwavering commitment, and client satisfaction. At Rehoboth Hills, we go beyond transactions — we build trust.",
     image: image4,
   },
   {
     name: "Innovation",
-    description: "Integrity is the cornerstone of our commitment at Rehoboth Hills Limited. In the realm of real estate, where trust is paramount, we stand unwavering in our dedication to honesty, transparency, and ethical conduct.",
+    description: "Innovation is the heartbeat of Rehoboth. We redefine possibilities, infuse creativity, and pioneer new approaches to transform your real estate experience. From cutting-edge technology to revolutionary real estate concepts, we're at the forefront of innovation in the industry.",
     image: image5,
   },
   {
     name: "Security",
     description:
-      "Integrity is the cornerstone of our commitment at Rehoboth Hills Limited. In the realm of real estate, where trust is paramount, we stand unwavering in our dedication to honesty, transparency, and ethical conduct.",
+      "Your safety is our commitment in Rehoboth Hills. Your safety is our commitment. Trust in a real estate experience where every transaction is fortified with the highest level of security protocols.",
     image: image6,
   },
 ];
@@ -74,36 +74,28 @@ const OurValues = ({ setSelectedPage }: Props) => {
               </p>
             </div>
           </motion.div>
-          <motion.div
+          <div
             className="mt-[100px] mx-auto w-5/6"
-            initial="hidden"
-            whileInView='visible'
-            viewport={{ once: true, amount: 0.8 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            variants={{
-              hidden: { opacity: 0, y: 50 },
-              visible: { opacity: 1, y: 0 },
-            }}
           >
             <ul className="grid md:grid-rows-2 md:grid-cols-3 gap-x-[25px] gap-y-8">
 
               {values.map((item: ValueType, index) => (
-                <motion.div  initial="hidden"
-                whileInView='visible'
-                viewport={{ once: true, amount: 0.8 }}
-                transition={{ delay: 0.8, duration: 0.8 }}
-                variants={{
-                  hidden: { opacity: 0, y: 50 },
-                  visible: { opacity: 1, y: 0 },
-                }} className="text-white" key={index}>
+                <motion.div initial="hidden"
+                  whileInView='visible'
+                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ delay: 0.7, duration: 0.7 }}
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
+                  }} className="text-white" key={index}>
                   <img src={item.image} alt="" className="mb-8" />
                   <h1 className="text-secondary-400 text-3xl mb-4">{item.name}</h1>
                   <p className="text-base font-light">{item.description} </p>
                 </motion.div>
               ))}
             </ul>
-          </motion.div >
-        </motion.div>
+          </div>
+        </motion.div >
       </div>
     </section>
   );
