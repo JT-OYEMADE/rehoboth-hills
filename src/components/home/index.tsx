@@ -21,7 +21,7 @@ const Home = ({ setSelectedPage }: Props) => {
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-10 ">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
-        className=" mt-[58px] mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+        className=" mt-[50px] mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
         {/* MAIN HEADER */}
@@ -39,9 +39,9 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="relative">
-              <div className="md:text-[58px] text-[48px] leading-none tracking-[-2.32px] before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
+              <h1 className="md:text-[58px] text-[48px] leading-none tracking-[-2.32px] before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
                 Redefining <span className="text-secondary-500 font-haskoy italic font-medium">wealth</span> <br /> creation in real estate
-              </div>
+              </h1>
             </div>
 
             <p className="mt-6 w-11/12 text-[#252525CC] text-lg font-light">
@@ -86,8 +86,7 @@ const Home = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          {/* <img alt="home-pageGraphic" src={HomePage} /> */}
-          <YoutubePlayer videoId='0o_6yxG9wk0' className="h-[325px] md:h-[650px] w-[550px]"/>
+          <YoutubePlayer videoId='0o_6yxG9wk0' className="h-[325px] md:h-[600px] w-[550px]"/>
         </motion.div>
       </motion.div>
 
