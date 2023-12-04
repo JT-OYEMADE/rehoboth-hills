@@ -39,7 +39,7 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="relative">
-              <h1 className="md:text-[58px] text-[48px] leading-none tracking-[-2.32px] before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
+              <h1 className=" text-[48px] leading-none tracking-[-2.32px] before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
                 Redefining <span className="text-secondary-500 font-haskoy italic font-medium">wealth</span> <br /> creation in real estate
               </h1>
             </div>
