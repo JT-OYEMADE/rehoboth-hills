@@ -14,6 +14,7 @@ type Props = {
 
 
 const OurProject = ({ setSelectedPage }: Props) => {
+
   const [doctorsSlide, setDoctorsSlide] = useState(0);
   const scrollDoctorsLeft = () => {
     if (doctorsSlide > 0 && doctorsSlide <= 4) {
@@ -95,16 +96,17 @@ const OurProject = ({ setSelectedPage }: Props) => {
     }
   };
   return (
-    <section id="ourproduct" className="mx-auto min-h-full w-5/6 py-10 md:py-20 font-haskoy overflow-x-hidden">
+    <section id="ourproduct" className="mx-auto min-h-full  w-5/6 py-10 md:py-20 font-haskoy overflow-x-hidden">
 
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.OurProduct)}
       >
-        <h1  className=" font-haskoy text-3xl md:text-5xl font-medium text-[#111] leading-normal -tracking-[1.92px] "> Our Projects </h1>
+        <h1  className=" font-haskoy text-3xl md:text-5xl font-medium text-[#111] leading-normal -tracking-[1.92px]"> Our Projects </h1>
         <div
           className="md:mt-10 md:w-4/5 flex flex-row  slide-wrappers doctorss"
       
         >
+
 
           {projects.map((project, index) => (
             <PROJECT key={index} image={project.image} headT={project.headT} text={project.text} sHeadT={project.sHeadT} list_one={project.list_one} list_two={project.list_two} list_three={project.list_three} location={project.location} price={project.price} className="string" />
@@ -120,16 +122,7 @@ const OurProject = ({ setSelectedPage }: Props) => {
             </span>
             <span className="hover:text-[#11111180]  text-[14px]">Previous Project</span>
           </div>
-          <div onClick={scrollDoctorsRight} className="cursor-pointer hidden md:flex flex-row items-center gap-x-1">
-            <span className="hover:text-[#11111180] text-[14px]">Next Project</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M12.025 15.0583L17.0833 10L12.025 4.94168" stroke="#111111" stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M2.91667 10L16.9417 10" stroke="#111111" stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
-          </div>
-          <div onClick={scrollDoctorsRight1} className="cursor-pointer md:hidden flex flex-row items-center gap-x-1">
+          <div onClick={scrollDoctorsRight} className="cursor-pointer flex flex-row items-center gap-x-1">
             <span className="hover:text-[#11111180] text-[14px]">Next Project</span>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

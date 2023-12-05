@@ -22,7 +22,7 @@ const AboutUs = ({ setSelectedPage }: Props) => {
           onViewportEnter={() => setSelectedPage(SelectedPage.AboutUs)}
         >
           <div className="flex flex-col md:flex-row justify-between items-start md:gap-20 gap-6">
-            <div className="md:mt-16">
+            <div className="md:my-16">
               {/* HEADER */}
               <motion.div
                 className="md:my-5 md:w-3/5"
@@ -80,13 +80,10 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <p className="my-5 font-haskoy font-light text-base text-[#252525CC]">
-                    In an ever-evolving real estate landscape, Rehoboth Hills Limited stands out as a beacon of unwavering commitment to crafting not just homes, but lifestyles. We understand that a home isn't merely a structure but a reflection of your dreams and aspirations. With this core philosophy, we've embarked on a journey to create spaces that seamlessly blend modernity, sustainability, and luxury.
+                    In an ever-evolving real estate landscape, Rehoboth Hills International Limited stands out as a beacon of unwavering commitment to crafting not just homes, but lifestyles. We understand that a home isn't merely a structure but a reflection of your dreams and aspirations. With this core philosophy, we've embarked on a journey to create spaces that seamlessly blend modernity, sustainability, and luxury.
                   </p>
                   <p className="mb-5 font-haskoy font-light text-base text-[#252525CC]">
-                    In an ever-evolving real estate landscape, Rehoboth Hills Limited stands out as a beacon of unwavering commitment to crafting not just homes, but lifestyles.
-                  </p>
-                  <p className="mb-5 font-haskoy font-light text-base text-[#252525CC]">
-                    In an ever-evolving real estate landscape, Rehoboth Hills Limited stands out as a beacon of unwavering commitment to crafting not just homes, but lifestyles. We understand that a home isn't merely a structure but a reflection of your dreams and aspirations. With this core philosophy, we've embarked on a journey to create spaces that seamlessly blend modernity, sustainability, and luxury.
+                    In an ever-evolving real estate landscape, Rehoboth Hills International Limited stands out as a beacon of unwavering commitment to crafting not just homes, but lifestyles. We understand that a home isn't merely a structure but a reflection of your dreams and aspirations. With this core philosophy, we've embarked on a journey to create spaces that seamlessly blend modernity, sustainability, and luxury.
                   </p>
                 </motion.div>
               </div>

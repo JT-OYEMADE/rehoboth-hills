@@ -11,13 +11,13 @@ const values: Array<ValueType> = [
   {
     name: "Integrity",
     description:
-      "Integrity is the cornerstone of our commitment at Rehoboth Hills Limited. In the realm of real estate, where trust is paramount, we stand unwavering in our dedication to honesty, transparency, and ethical conduct.",
+      "Integrity is the cornerstone of our commitment at Rehoboth Hills International Limited. In the realm of real estate, where trust is paramount, we stand unwavering in our dedication to honesty, transparency, and ethical conduct.",
     image: image1,
   },
   {
     name: "Excellence",
     description:
-      "At Rehoboth Hills Limited, excellence isn't just a standard; it's our promise. We are dedicated to crafting not just houses but homes of unparalleled quality.",
+      "At Rehoboth Hills International Limited, excellence isn't just a standard; it's our promise. We are dedicated to crafting not just houses but homes of unparalleled quality.",
     image: image2,
   },
   {
@@ -68,7 +68,7 @@ const OurValues = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="md:w-2/5">
-              <div className=" font-haskoy md:text-5xl text-3xl font-medium text-white leading-normal -tracking-[0.8px] ">What <span className="text-secondary-400">Our Values</span> are at Rehoboth Hills Limited</div>
+              <div className=" font-haskoy md:text-5xl text-3xl font-medium text-white leading-normal -tracking-[0.8px] ">What <span className="text-secondary-400">Our Values</span> are at Rehoboth Hills International Limited</div>
               <p className="pt-2 pr-4 text-base font-light text-[#FFFFFFCC]">
                 With this core philosophy, we've embarked on a journey to create spaces that seamlessly blend modernity, sustainability, and luxury.
               </p>

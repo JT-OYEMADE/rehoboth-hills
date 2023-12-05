@@ -45,7 +45,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
 
             <p className="mt-6 w-11/12 text-[#252525CC] text-lg font-light">
-              We are Rehoboth Hills Limited, a name synonymous with innovation, excellence, and taste. We are revolutionising wealth creation within the Nigerian real estate industry and beyond.
+              We are Rehoboth Hills International Limited, a name synonymous with innovation, excellence, and taste. We are revolutionising wealth creation within the Nigerian real estate industry and beyond.
             </p>
           </motion.div>
 
