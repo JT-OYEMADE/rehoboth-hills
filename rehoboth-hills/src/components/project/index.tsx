@@ -65,36 +65,36 @@ const OurProject = ({ setSelectedPage }: Props) => {
       }
     }
   };
-  const scrollDoctorsRight1 = () => {
-    const max = window.innerWidth > 0 ? 2 : 3;
-    if (doctorsSlide >= 0 && doctorsSlide < max) {
-      const scrollableContent = document.querySelector(
-        ".slide-wrappers.doctorss"
-      ) as HTMLElement;
-      const Image = document.querySelector(".slides.doctorss") as HTMLElement;
-      const slide = doctorsSlide + 1;
+  // const scrollDoctorsRight1 = () => {
+  //   const max = window.innerWidth > 0 ? 2 : 3;
+  //   if (doctorsSlide >= 0 && doctorsSlide < max) {
+  //     const scrollableContent = document.querySelector(
+  //       ".slide-wrappers.doctorss"
+  //     ) as HTMLElement;
+  //     const Image = document.querySelector(".slides.doctorss") as HTMLElement;
+  //     const slide = doctorsSlide + 1;
 
-      if (scrollableContent && Image) {
-        setDoctorsSlide(slide);
-        const ImageWidth = Image.offsetWidth;
-        const scrollTo = ImageWidth * slide + 10 * slide * 2;
+  //     if (scrollableContent && Image) {
+  //       setDoctorsSlide(slide);
+  //       const ImageWidth = Image.offsetWidth;
+  //       const scrollTo = ImageWidth * slide + 10 * slide * 2;
 
-        gsap.to(scrollableContent, { x: -scrollTo, duration: 0.5 });
-      }
-    }
+  //       gsap.to(scrollableContent, { x: -scrollTo, duration: 0.5 });
+  //     }
+  //   }
 
-    if (doctorsSlide === max) {
-      const scrollableContent = document.querySelector(
-        ".slide-wrappers.doctorss"
-      ) as HTMLElement;
+  //   if (doctorsSlide === max) {
+  //     const scrollableContent = document.querySelector(
+  //       ".slide-wrappers.doctorss"
+  //     ) as HTMLElement;
 
-      if (scrollableContent) {
-        setDoctorsSlide(0);
+  //     if (scrollableContent) {
+  //       setDoctorsSlide(0);
 
-        gsap.to(scrollableContent, { x: 0, duration: 0.5 });
-      }
-    }
-  };
+  //       gsap.to(scrollableContent, { x: 0, duration: 0.5 });
+  //     }
+  //   }
+  // };
   return (
     <section id="ourproduct" className="mx-auto min-h-full  w-5/6 py-10 md:py-20 font-haskoy overflow-x-hidden">
 

@@ -1,7 +1,5 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
 import "@/components/testimonials/index.scss"
-import Carousel from 'react-bootstrap/Carousel';
-import { useState } from 'react';
 
 interface ProjectProps {
   key: number; // or number, depending on your data
@@ -31,10 +29,7 @@ const PROJECT: React.FC<ProjectProps> = ({
   price,
 }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1080px)");
-  const [index, setIndex] = useState(0);
-  const handleSelect = (selectedIndex: number) => {
-    setIndex(selectedIndex);
-  };
+
   return (
     <>
       {isAboveMediumScreens ? (
