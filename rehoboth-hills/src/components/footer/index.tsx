@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-start md:gap-x-[200px]">
           <div className='text-white '>
             {footerLinks.map((linksArray, index) => (
-              <p key={index} className=" grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-3 md:gap-x-[134px] md:mt-0 mt-5 gap-y-6 gap-x-5">
+              <p key={index} className=" grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-3 md:gap-x-[52.5px] md:mt-0 mt-5 gap-y-6 gap-x-5">
                 {linksArray.map((link) => (
                   <a className=" font-light" key={link.text} href={link.link}>
                     {link.text}
