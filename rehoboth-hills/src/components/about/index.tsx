@@ -1,6 +1,8 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import PText from "@/shared/PText";
+import CountUpAnimation from "./count";
+
 
 // const childVariant = {
 //   hidden: { opacity: 0, scale: 0.9 },
@@ -15,6 +17,7 @@ type Props = {
 };
 
 const AboutUs = ({ setSelectedPage }: Props) => {
+  
   return (
     <section id="aboutus" className="bg-[#F4FCF6]">
       <div className="mx-auto min-h-full w-5/6 py-20 md:pb-32">
@@ -53,15 +56,15 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                 </div>
                 <div className="flex flex-row md:justify-between mt-3  gap-6">
                   <span>
-                    <h1 className=" font-haskoy md:text-5xl font-medium text-secondary-500  -tracking-[1.92px] text-4xl " >300+</h1>
+                    <CountUpAnimation targetValue={300} animationDuration={1000} className=" font-haskoy md:text-5xl font-medium text-secondary-500  -tracking-[1.92px] text-4xl "/>
                     <p className=" font-haskoy md:text-[16px] font-light text-[14px]">Customers</p>
                   </span>
                   <span className="">
-                    <h1 className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " >1000+</h1 >
+                    <CountUpAnimation targetValue={1000} animationDuration={1000} className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " />
                     <p className=" font-haskoy md:text-[16px] font-light text-[14px]">Partners</p>
                   </span>
                   <span>
-                    <h1 className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " >50+</h1 >
+                    <CountUpAnimation targetValue={50} animationDuration={1000} className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " />
                     <p className=" font-haskoy md:text-[16px] font-light text-[14px]">Realtors</p>
                   </span>
                 </div>
