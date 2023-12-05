@@ -37,6 +37,10 @@
 }
 
 .slide-wrappers.doctorss {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* For Firefox */
+  appearance: none;
   width: 800%;
   // overflow: hidden;
   overflow-x: hidden;
@@ -104,6 +108,10 @@
 }
 
 .slides.doctorss {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* For Firefox */
+  appearance: none;
   // border-radius: 12px;
   // background-color: #fdeff0;
   width: 100%;
@@ -281,6 +289,10 @@
 
 @media (max-width: 766px) {
   .slides.doctorss {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* For Firefox */
+    appearance: none;
     // border-radius: 12px;
     // background-color: #fdeff0;
     width: 100%;
@@ -291,6 +303,10 @@
   }
 
   .slide-wrappers.doctorss {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* For Firefox */
+    appearance: none;
     width: 300%;
     // overflow: hidden;
     overflow-x: hidden;

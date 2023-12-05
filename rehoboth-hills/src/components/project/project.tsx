@@ -35,7 +35,7 @@ const PROJECT: React.FC<ProjectProps> = ({
       {isAboveMediumScreens ? (
         <div className=" slides doctorss relative ">
           <img src={image} alt={headT} className=" h-[90%] w-[30%]" />
-          <div className=" bg-[#FFF] w-[487px] px-[22px] pt-[40px] pb-[47px] md:absolute  top-[110px] border-[0.5px] ml-[840px]  md:ml-[840px] ">
+          <div className=" bg-[#FFF] w-[487px] px-[22px] pt-[40px] pb-[47px] md:absolute  top-[110px] border-[0.5px] md:ml-[840px] ">
             <h2 className=" text-[32px] text-[#111]">{headT}</h2>
             <p className=" font-light text-[14px] mb-6">{text}</p>
             <h6 className=" text-xs font-semibold">{sHeadT}</h6>
@@ -62,7 +62,7 @@ const PROJECT: React.FC<ProjectProps> = ({
 
 <div className=" slides doctorss relative ">
           <img src={image} alt={headT} className="sm:w-[30%]" />
-          <div className=" bg-[#FFF] md:w-[487px] px-[22px] pt-[40px] pb-[47px] md:absolute  md:top-[110px] border-[0.5px] xs:border-[0.5px] sm:border-0 md:ml-[840px] ">
+          <div className=" bg-[#FFF] md:w-[487px] px-[22px] pt-[40px] pb-[47px] md:absolute  md:top-[110px] border-[0.5px] xs:border-[0.5px] sm:border-0">
             <h2 className=" text-[32px] text-[#111]">{headT}</h2>
             <p className=" font-light text-[12px] sm:text-[14px] mb-6">{text}</p>
             <h6 className=" text-xs font-semibold">{sHeadT}</h6>
