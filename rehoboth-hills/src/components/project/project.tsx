@@ -35,7 +35,7 @@ const PROJECT: React.FC<ProjectProps> = ({
       {isAboveMediumScreens ? (
         <div className=" slides doctorss relative ">
           <img src={image} alt={headT} className=" md:h-[90%] md:w-[30%]" />
-          <div className=" bg-[#FFF] md:w-[487px] px-[22px] pt-[40px] pb-[47px] md:absolute  md:top-[110px] md:border-[0.5px] md:ml-[840px] ">
+          <div className=" bg-[#FFF] md:w-[487px] px-[22px] pt-[40px] pb-[47px] md:absolute  md:top-[110px] border-[0.5px] md:ml-[840px] ">
             <h2 className=" text-[32px] text-[#111]">{headT}</h2>
             <p className=" font-light text-[14px] mb-6">{text}</p>
             <h6 className=" text-xs font-semibold">{sHeadT}</h6>
