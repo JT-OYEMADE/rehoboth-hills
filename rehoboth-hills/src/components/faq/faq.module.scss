@@ -16,7 +16,10 @@
 }
 
 .faqQuestion {
-  background-color: #F4FCF6;
+  border-radius: 8px;
+  border: 0px solid rgba(0, 0, 0, 0.20);
+
+  background: #FFF;
   display: flex;
   color: $grey-20;
   padding: 1.2rem;
@@ -73,7 +76,7 @@
   color: $grey-100;
   padding: 0 1.5rem 1.5rem 1.5rem;
   font-family: "Haskoy", "sans-serif";
-  font-weight: 400;
+  font-weight: 300;
 
   @include media("<=tablet") {
     padding: 1.2rem;
