@@ -2,13 +2,18 @@ import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import { faqcoms } from "@/data/faqs"
 import FAQCOM from "./faqcom";
+import { useState } from "react";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
 const FAQ = ({ setSelectedPage }: Props) => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  const handleToggle = (index: number) => {
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   return (
     <section id="faq" className=" pt-24 pb-32 bg-[#F9FAF9]">
@@ -46,8 +51,11 @@ const FAQ = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            {faqcoms.map((faq) => (
-              <FAQCOM  key={faq.question} question={faq.question} answer={faq.answer} />
+            {faqcoms.map((faq, index) => (
+              <FAQCOM  key={index}
+              {...faq}
+              isOpen={openIndex === index}
+              onToggle={() => handleToggle(index)} />
             ))}
 
           </motion.div>

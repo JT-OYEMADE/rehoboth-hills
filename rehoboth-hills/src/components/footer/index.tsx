@@ -1,4 +1,3 @@
-import Discord from "@/assets/socials/discord.svg"
 import Facebook from "@/assets/socials/facebook.svg"
 import Instagram from "@/assets/socials/instagram.svg"
 import X from "@/assets/socials/x.svg"
@@ -63,16 +62,13 @@ const Footer = () => {
             ))}
           </div>
           <div className="flex flex-row gap-x-[15px] md:mt-0 mt-4">
-            <a href="/">
+            <a href="https://twitter.com">
               <img src={X} alt="Twitter" />
             </a>
-            <a href="/">
+            <a href="https://instagram.com/rehoboth_hills?igshid=OGQ5ZDc2ODk2ZA==">
               <img src={Instagram} alt="Instagram" />
             </a>
-            <a href="/">
-              <img src={Discord} alt="Discord" />
-            </a>
-            <a href="/">
+            <a href="https://www.facebook.com/profile.php?id=61552516001264&mibextid=LQQJ4d">
               <img src={Facebook} alt="Facebook" />
             </a>
           </div>

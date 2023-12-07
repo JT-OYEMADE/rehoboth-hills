@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 interface CountUpAnimationProps {
   targetValue: number;
@@ -12,6 +13,7 @@ const CountUpAnimation: React.FC<CountUpAnimationProps> = ({
   className,
 }) => {
   const [count, setCount] = useState<number>(0);
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   useEffect(() => {
     let startTime: number | null = null;
@@ -25,21 +27,23 @@ const CountUpAnimation: React.FC<CountUpAnimationProps> = ({
 
       setCount(currentValue);
 
-      if (percentageComplete < 1) {
+      if (percentageComplete < 1 && inView) {
         requestAnimationFrame(animateCountUp);
       }
     };
 
-    requestAnimationFrame(animateCountUp);
+    if (inView) {
+      requestAnimationFrame(animateCountUp);
+    }
 
     // Clean up the interval when the component is unmounted
     return () => {
       startTime = null;
     };
-  }, [targetValue, animationDuration]);
+  }, [targetValue, animationDuration, inView]);
 
   return (
-    <div className={className}>
+    <div ref={ref} className={className}>
       {count}+
     </div>
   );

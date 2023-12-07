@@ -1,6 +1,5 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
-import ActionButton from "@/shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 import Dukiya from "@/assets/partners/dukiya.png"
@@ -61,9 +60,14 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <ActionButton setSelectedPage={setSelectedPage}>
-              Contact Us
-            </ActionButton>
+            <a
+              className="rounded-[36px] transition duration-500 flex justify-center items-center gap-2.5 w-[150px] text-white bg-secondary-500 py-2.5 hover:bg-black hover:text-secondary-500"
+              href="https://instagram.com/rehoboth_hills?igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Contact Us</p>
+            </a>
             <AnchorLink
               className="text-base font-normal text-secondary-500 hover:text-black transition duration-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
@@ -86,7 +90,7 @@ const Home = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <YoutubePlayer videoId='0o_6yxG9wk0' className="h-[325px] md:h-[600px] w-[550px]"/>
+          <YoutubePlayer videoId='0o_6yxG9wk0' className="h-[325px] md:h-[600px] w-[550px]" />
         </motion.div>
       </motion.div>
 

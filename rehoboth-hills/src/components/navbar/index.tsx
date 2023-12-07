@@ -5,7 +5,6 @@ import Logo from '@/assets/logo.svg'
 import Link from './Link'
 import { SelectedPage } from '@/shared/types'
 import useMediaQuery from "@/hooks/useMediaQuery";
-import ActionButton from '@/shared/ActionButton'
 
 type Props = {
   isTopOfPage: boolean;
@@ -68,13 +67,15 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               <Bars3BottomLeftIcon className="h-6 w-6 text-secondary-500" />
             </button>
           )}
-          {isAboveMediumScreens ? (<div>
-            <ActionButton setSelectedPage={setSelectedPage}> <span>Contact us</span>
+          {isAboveMediumScreens && (<div>
+            <a target="_blank"
+              rel="noopener noreferrer" className="rounded-[36px] transition duration-500 flex justify-center items-center gap-2.5 w-[150px] text-white bg-secondary-500 py-2.5 hover:bg-black hover:text-secondary-500"
+              href="https://instagram.com/rehoboth_hills?igshid=OGQ5ZDc2ODk2ZA=="> <span>Contact us</span>
               <svg className='hover:' xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                 <path d="M14.93 18.07L21 12L14.93 5.93" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M3.99996 12L20.83 12" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              </svg></ActionButton>
-          </div>) : ("")}
+              </svg></a>
+          </div>)}
         </div>
       </div>
       {/* MOBILE MENU MODAL */}
@@ -90,7 +91,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
           {/* MENU ITEMS */}
           <div className="px-8 pb-16 flex flex-col gap-6 text-xl">
-          <Link
+            <Link
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
