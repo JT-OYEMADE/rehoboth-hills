@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./faq.module.scss";
 import { MinSvg } from "@/assets/svg/SvgIcons";
 import { PlusSvg } from "@/assets/svg/SvgIcons";
