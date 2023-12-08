@@ -56,15 +56,15 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                 </div>
                 <div className="flex flex-row md:justify-between mt-3  gap-6">
                   <span>
-                    <CountUpAnimation targetValue={50} animationDuration={1000} className=" font-haskoy md:text-5xl font-medium text-secondary-500  -tracking-[1.92px] text-4xl "/>
+                    <CountUpAnimation targetValue={100} animationDuration={1000} className=" font-haskoy md:text-5xl font-medium text-secondary-500  -tracking-[1.92px] text-4xl "/>
                     <p className=" font-haskoy md:text-[16px] font-light text-[14px]">Customers</p>
                   </span>
                   <span className="">
-                    <CountUpAnimation targetValue={100} animationDuration={1000} className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " />
+                    <CountUpAnimation targetValue={200} animationDuration={1000} className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " />
                     <p className=" font-haskoy md:text-[16px] font-light text-[14px]">Partners</p>
                   </span>
                   <span>
-                    <CountUpAnimation targetValue={400} animationDuration={1000} className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " />
+                    <CountUpAnimation targetValue={1000} animationDuration={1000} className=" font-haskoy md:text-5xl font-medium text-secondary-500 -tracking-[1.92px] text-4xl " />
                     <p className=" font-haskoy md:text-[16px] font-light text-[14px]">Realtors</p>
                   </span>
                 </div>
