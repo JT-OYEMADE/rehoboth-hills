@@ -121,3 +121,13 @@
     margin-left: 3.2rem;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .faqQuestionA {
+    font-size: 1rem !important;
+  }
+
+  .faqQuestion {
+    font-size: 1rem !important;
+  }
+}
