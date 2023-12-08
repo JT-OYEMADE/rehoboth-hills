@@ -34,7 +34,7 @@ const FAQ = ({ setSelectedPage }: Props) => {
           }}
         >
           <h1 className=" text-4xl w-3/5 text-secondary-500">Frequently Asked  Questions</h1>
-          <p className="my-5 text-sm font-normal w-[80%]">
+          <p className="my-5 text-[16px] font-normal w-[80%]">
             We are Rehoboth Hills International Limited, a name synonymous with innovation, excellence, and taste. We are revolutionising wealth creation within the Nigerian real estate industry and beyond.
           </p>
         </motion.div>
